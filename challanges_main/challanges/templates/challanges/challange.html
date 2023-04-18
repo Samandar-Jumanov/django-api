@@ -1,0 +1,15 @@
+
+ {%block title%}
+ Challange {{ name | title }}
+ {%endblock%}
+
+
+ {%block content%}
+    {% if response is  None %}
+    <p> There is no challange yet </p>
+    {% else   %}
+    <h1>{{response | title}}</h1>
+      
+     {% endif %}
+
+     {%endblock%}
